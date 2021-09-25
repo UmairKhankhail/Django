@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    {{form.as_p}}
+
+    <hr>
+
+    <div>
+    <label for="{{form.name.id_for_label}}">Name: </label>
+    {{form.name}}
+    </div>
+
+    <hr>
+
+    <div>
+    <label for="{{form.Email.id_for_label}}">Email: </label>
+    {{form.email}}
+    </div>
+
+    <hr>
+
+    <div>
+    {{form.email.label_tag}}
+    {{form.email}}
+    </div>
+
+    <hr>
+
+    {{form.name.label}}
+    {{form.name.value}} 
+
+    <hr>
+    {{form.name.help_text}}
+
+    <hr>
+
+    <p>To get information about anything regarding tag, use the following:</p>
+    {{form.name.field.required}}
+</body>
+</html>
