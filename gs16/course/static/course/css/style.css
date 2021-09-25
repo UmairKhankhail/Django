@@ -1,0 +1,19 @@
+body{
+    background-color: burlywood;
+    color: darkslategray
+    
+}
+
+p{
+    color:whitesmoke;
+
+}
+
+h1{
+    color: gray;
+}
+
+img{
+    height: 300px;
+    width: 500px;
+}

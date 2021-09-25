@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Base {% endblock title %}</title>
+    
+    {% block cssfile %}<link rel="stylesheet" href="{% static 'core/css/style.css' %}">{% endblock cssfile %}
+</head>
+<body>
+    <nav>
+    <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    </ul>
+    </nav>
+    <h1>{% block h1 %}{% endblock h1 %}</h1>
+    {% block content %}{% endblock content %}
+
+</body>
+</html>
